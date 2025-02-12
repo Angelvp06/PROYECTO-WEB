@@ -1,0 +1,11 @@
+
+img {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+}
+
+header {
+    padding-right: 25%;
+    padding-left: 25%;
+}
