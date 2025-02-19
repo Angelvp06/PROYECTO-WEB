@@ -1,9 +1,9 @@
 #galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 2em; 
-    max-width: 900px; 
     margin: 0 auto;
+    justify-content: center;
 }
 
 #galeria img {
@@ -12,7 +12,22 @@
     transition: background-color 0.3s ease;
     justify-self: center; 
     align-self: center;
+}
 
+#galeria .producto {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#galeria .producto img {
+    display: block;
+    margin: 0 auto;
+}
+
+#galeria .producto .nombre {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #galeria img:hover {
@@ -22,6 +37,10 @@
 
 /*-------------------------------*/
 
-#publi{
-    align-items: center;
+#publi {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
