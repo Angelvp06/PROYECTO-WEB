@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b4b4b4;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    flex-shrink: 0; 
+}
+
+.logo-container img {
+    height: 50px; 
+    width: auto;
+    display: block;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; 
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #ff9800;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover {
+    color: #ff9800;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+    
+
+
+/*-------------------------------*/
+
+.IconoUsuario img {
+    width: 80px;
+    height: 50px;
+    float:right;
+    margin-right: 5px;
+}
+
+.IconoUsuario {
+    position: absolute;
+    right: 0;
+}
+
+/*-------------------------------*/
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em; 
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+#galeria img {
+    width: 250px; 
+    height: 250px; 
+    transition: background-color 0.3s ease;
+    justify-self: center; 
+    align-self: center;
+
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/*-------------------------------*/
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
