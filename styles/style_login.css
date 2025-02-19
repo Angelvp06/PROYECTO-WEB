@@ -6,33 +6,32 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family: sans-serif;
-    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
-    background: #e1eec3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #f05053, #e1eec3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #f05053, #e1eec3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background: #e1eec3;
+    background: -webkit-linear-gradient(to left, #f05053, #e1eec3);
+    background: linear-gradient(to left, #f05053, #e1eec3);
 }
+
 .main {
     width: 350px;
     height: 500px;
-    /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
-    background: #ECB016;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f05053, #ECB016);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f05053, #ECB016); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #ECB016;
+    background: -webkit-linear-gradient(to right, #f05053, #ECB016);
+    background: linear-gradient(to right, #f05053, #ECB016);
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
 }
+
 #chk {
     display: none;
 }
+
 .singup {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
 label {
     color: #fff;
     font-size: 2.3em;
@@ -43,6 +42,7 @@ label {
     cursor: pointer;
     transition: .5s ease-in-out;
 }
+
 input {
     width: 60%;
     height: 20px;
@@ -55,6 +55,7 @@ input {
     outline: none;
     border-radius: 5px;
 }
+
 button {
     width: 60%;
     height: 40px;
@@ -72,9 +73,11 @@ button {
     transition: .2s ease-in;
     cursor: pointer;
 }
+
 button:hover {
     background: #6d44b8;
 }
+
 .login {
     height: 460px;
     background: #eee;
@@ -82,16 +85,20 @@ button:hover {
     transform: translateY(-180px);
     transition: .8s ease-in-out;
 }
+
 .login label {
     color: #573b8a;
     transform: scale(.6);
 }
+
 #chk:checked ~ .login {
     transform: translateY(-500px);
 }
+
 #chk:checked ~ .login label {
     transform: scale(1);
 }
+
 #chk:checked ~ .singup label {
     transform: scale(.6);
 }

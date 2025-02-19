@@ -1,0 +1,27 @@
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em; 
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+#galeria img {
+    width: 250px; 
+    height: 250px; 
+    transition: background-color 0.3s ease;
+    justify-self: center; 
+    align-self: center;
+
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/*-------------------------------*/
+
+#publi{
+    align-items: center;
+}

@@ -62,8 +62,6 @@ body {
     width: 100%;
 }
     
-
-
 /*-------------------------------*/
 
 .IconoUsuario img {
@@ -76,36 +74,4 @@ body {
 .IconoUsuario {
     position: absolute;
     right: 0;
-}
-
-/*-------------------------------*/
-
-#galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2em; 
-    max-width: 900px; 
-    margin: 0 auto;
-}
-
-#galeria img {
-    width: 250px; 
-    height: 250px; 
-    transition: background-color 0.3s ease;
-    justify-self: center; 
-    align-self: center;
-
-}
-
-#galeria img:hover {
-    transform: scale(1.1);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/*-------------------------------*/
-
-h1{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2em;
 }
