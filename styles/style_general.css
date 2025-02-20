@@ -118,6 +118,7 @@ body {
 .footer-section ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .footer-section ul li {
@@ -133,6 +134,13 @@ body {
     text-decoration: underline;
 }
 
+.footer-social-icons{
+    display: flex;
+    text-align: center;    
+    align-items: center;
+    margin-top: 20px;
+}
+
 .social-icons a {
     margin: 0 10px;
     display: inline-block;
@@ -145,6 +153,7 @@ body {
 
 .footer-bottom {
     margin-top: 20px;
+    text-align: center;
 }
 
 /* Barra de búsqueda */
@@ -200,7 +209,7 @@ body {
 }
 /*Iconos redes sociales*/   /*Falta colocarlos*/
 ._14 {
-    font-size: 1.4em;
+    margin-bottom: 80px;
 }
 /*Para colocarlos*/
 .footer-social-icons ul {
@@ -298,4 +307,16 @@ body {
 }
 .fa-github:hover {
     background-color: #5a32a3;
+}
+
+.lema{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    color:#eb8231;
+}
+
+h4{
+    color:#eb8231;
 }
