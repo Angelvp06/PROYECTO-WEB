@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #b4b4b4;
 }
-
+/*Hover*/
 .navbar {
     background-color: #333;
     display: flex;
@@ -64,7 +64,7 @@ body {
     width: 100%;
 }
     
-/*-------------------------------*/
+/*Icono Usuario*/
 
 .IconoUsuario img {
     width: 80px;
@@ -92,7 +92,7 @@ body {
 }
 
 
-/*-------------------------------*/
+/*-----Footer-----*/
 
 .footer {
     background-color: #333;
@@ -207,7 +207,7 @@ body {
         padding: 0 6px;
     }
 }
-/*Iconos redes sociales*/   /*Falta colocarlos*/
+/*Iconos redes sociales*/
 ._14 {
     margin-bottom: 80px;
 }

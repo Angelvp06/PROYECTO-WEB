@@ -15,8 +15,8 @@ body {
     width: 350px;
     height: 500px;
     background: #ECB016;
-    background: -webkit-linear-gradient(to right, #f05053, #ECB016);
-    background: linear-gradient(to right, #f05053, #ECB016);
+    background: -webkit-linear-gradient(to right, rgb(0, 0, 0), #b4b4b4);
+    background: linear-gradient(to right, rgb(0, 0, 0), #b4b4b4);
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 5px 20px 50px #000;
@@ -63,7 +63,7 @@ button {
     justify-content: center;
     display: block;
     color: #fff;
-    background: #3149ce;
+    background: #4d4d4e;
     font-size: 1em;
     font-weight: bold;
     margin-top: 20px;
@@ -75,7 +75,7 @@ button {
 }
 
 button:hover {
-    background: #2c49ec;
+    background: #5a5b61;
 }
 
 .login {
@@ -87,7 +87,7 @@ button:hover {
 }
 
 .login label {
-    color: #3149ce;
+    color: #4d4d4e;
     transform: scale(.6);
 }
 
