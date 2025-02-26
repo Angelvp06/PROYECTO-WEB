@@ -5,6 +5,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #b4b4b4;
 }
+header{
+    z-index: 3;
+}
+footer{
+    z-index: 3;
+}
 /*Hover*/
 .navbar {
     background-color: #333;
