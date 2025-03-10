@@ -89,7 +89,7 @@ footer{
     width: 75px;
     height: 70px;
     float: right;
-    margin-right: 65px;
+    margin-right: 75px;
 }
 
 .CarroCompras{
@@ -326,3 +326,14 @@ footer{
 h4{
     color:#eb8231;
 }
+/*Boton back to top*/
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eb8231;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }

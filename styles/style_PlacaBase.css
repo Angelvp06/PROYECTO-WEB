@@ -1,75 +1,42 @@
 main {
-  position: relative;
-  min-height: 100vh; 
+  display: flex;
+  min-height: 100vh;
+  padding-top: 60px; 
 }
-/*Barra lateral*/
-.sidebar {
-  text-align: left;
+/* Barra Lateral */
+#sidebar1 {
   position: absolute;
-  z-index: 2;
-}
-
-#sidebar {
-  z-index: 1000;
-  position: fixed;
-  left:   0;
+  top: 70px; 
+  padding-left: 10px;
   width: 300px;
-  height: 100%; 
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #333;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  
+  height: 2335px; 
+  background-color: #9e4f4f;
 }
 
-#sidebar header {
-  background-color: #333;
-  font-size: 20px;
-  line-height: 52px;
-  text-align: center;
+.productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  z-index: 2;
+  margin-left: 450px;
+  margin-top: 100px;
 }
 
-#sidebar header a {
-  color: #fff;
-  display: block;
-  text-decoration: none;
-}
-
-#sidebar header a:hover {
-  color: #fff;
-}
-
-#sidebar .nav a {
-  background: none;
-  border-bottom: 1px solid #455A64;
-  color: #CFD8DC;
-  font-size: 14px;
-  padding: 16px 24px;
-}
-
-#sidebar .nav a:hover {
-  background: none;
-  color: #ECEFF1;
-}
-
-#sidebar .nav a i {
-  margin-right: 16px;
-}
-/*Contenido Web*/
 .producto {
   background: #fff;
-  width: 10%;
+  width: 200px;
   padding: 15px;
+  margin: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  text-align: center;
 }
+
 .producto:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
+
 .btn-comprar {
   background: #eb8231;
   color: white;
@@ -78,9 +45,22 @@ main {
   border-radius: 5px;
   cursor: pointer;
 }
-
+.btn-comprar:hover {
+  background: #c52121;
+}
 .producto img {
   width: 100%;
   border-radius: 10px;
-
 }
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5em;
+  color: #9e4f4f;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
