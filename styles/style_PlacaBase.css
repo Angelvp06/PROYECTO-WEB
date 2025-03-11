@@ -9,7 +9,7 @@ main {
   top: 70px; 
   padding: 20px;
   width: 300px;
-  height: 2345px; 
+  height: 2427px; 
   background-color: #797979;
 }
 
@@ -36,8 +36,7 @@ main {
 }
 
 /*Filtros populares*/
-.filtro{
-  background-color: white;
+.filtros{
   border-radius:5px;
   border: none;
   margin: 5px;
@@ -45,9 +44,42 @@ main {
   cursor: pointer;
   font-size: medium;
 }
-.filtro:hover{
-  background-color: lightgray;
+.filtros ul li a:hover{
+  color: black;
 
+}
+/*Desplegables*/
+details.desplegable {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: white;
+  
+}
+
+details.desplegable summary {
+  cursor: pointer; 
+  font-weight: bold;
+  
+}
+
+details.desplegable form {
+  margin-top: 10px; 
+}
+
+details.desplegable label {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8em;
+  transition: color 0.3s;
+  cursor: pointer;
+
+}
+details.desplegable label:hover {
+  color: black;
+}
+
+details.desplegable input[type="checkbox"] {
+  size: 20px;
 }
 
 /*Linea Divisora*/
@@ -60,24 +92,28 @@ main {
 
 /*Productos*/
 .productos {
+  border: #444 1px solid;
+  border-radius: 20px;
+  background-color: #d8d5d5 ;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   z-index: 2;
   margin-left: 450px;
   margin-top: 100px;
+  margin-bottom: 70px;
 }
 
 .producto {
-  background: rgba(255, 255, 255, 0.8);;
+  background: rgba(233, 233, 233, 0.8);
+  border: #444 1px solid;
   width: 200px;
   padding: 15px;
   margin: 50px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
   text-align: center;
 }
+
 .precio{
   margin-top: 5px;
 }
@@ -132,13 +168,14 @@ h1 {
   height: 2000px;
   margin-right: 120px;
 }
-/*
+
 /*paginas
 .paginas {
   display: flex;
   align-items: center;
   gap: 10px; 
-  margin: 50px 0 100px; 
+  margin-top: 2330px;
+  margin-right: 500px; 
   width: 100%;
 
 }
