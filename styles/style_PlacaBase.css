@@ -11,6 +11,7 @@ main {
   width: 300px;
   height: 2427px; 
   background-color: #797979;
+  border-right: 1px solid black;
 }
 
 #sidebar1 h2 {
@@ -36,18 +37,30 @@ main {
 }
 
 /*Filtros populares*/
-.filtros{
+.filtro{
   border-radius:5px;
   border: none;
   margin: 5px;
   padding: border-box;
-  cursor: pointer;
   font-size: medium;
+  cursor: pointer;
 }
-.filtros ul li a:hover{
-  color: black;
+.filtro:hover{
+  background-color: lightgray ;
+}
 
+.filtros2 li ul a{
+  border-radius:5px;
+  border: none;
+  margin: 5px;
+  padding: border-box;
+  font-size: medium;
+  cursor: pointer;
 }
+.filtros2 li ul a:hover{
+  color: black ;
+}
+
 /*Desplegables*/
 details.desplegable {
   font-size: 1.5em;
@@ -79,7 +92,7 @@ details.desplegable label:hover {
 }
 
 details.desplegable input[type="checkbox"] {
-  size: 20px;
+  size: 50px;
 }
 
 /*Linea Divisora*/
@@ -112,6 +125,7 @@ details.desplegable input[type="checkbox"] {
   margin: 50px;
   border-radius: 10px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .precio{
@@ -119,7 +133,8 @@ details.desplegable input[type="checkbox"] {
 }
 
 .producto:hover {
-  transform: translateY(-10px);
+  box-shadow: 0 0 20px #444;
+  filter: brightness(1.1);
 }
 
 .btn-comprar {
@@ -142,7 +157,7 @@ details.desplegable input[type="checkbox"] {
 /*Titulo pagina*/
 h1 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 2.5em;
   font-weight: 600;
   color: #444;
@@ -169,15 +184,14 @@ h1 {
   margin-right: 120px;
 }
 
-/*paginas
+/*paginas*/
 .paginas {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 5px; 
   margin-top: 2330px;
   margin-right: 500px; 
   width: 100%;
-
 }
 
 .pagina-boton {
@@ -189,9 +203,11 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: medium;
+  font-weight: bold;
+  
 }
 
 .pagina-boton:hover {
   background-color: #c52121;
 }
-*/

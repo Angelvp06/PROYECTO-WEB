@@ -5,60 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link rel="stylesheet" href="./styles/style_shoppingCart.css">
+    <link rel="stylesheet" href="./styles/style_general.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
-    <div class="container">
-        <div class="cart">
-            <h2>Carrito de Compras</h2>
-            <div class="cart-item">
-                <img src="tarjetas-gráficas-10.jpg" alt="Producto">
-                <div class="cart-item-info">
-                    <p>Producto 1</p>
-                    <p>$10.00</p>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html"><img src="./media/Index/Logo.png" alt="Logo"></a>
+            </div>
+            
+            <ul>
+                <li><a href="CPU.html" class="nav-link">CPU</a></li>
+                <li><a href="PlacaBase.html" class="nav-link">Placa Base</a></li>
+                <li><a href="FuenteAlimentacion.html" class="nav-link">Fuentes de Alimentación</a></li>
+                <li><a href="DiscosDuros.html" class="nav-link">Discos Duros</a></li>
+                <li><a href="GPU.html" class="nav-link">GPU</a></li>
+            </ul>
+    
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Buscar">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">search</i>
+                </button>
+            </div>
+    
+            <div class="CarroCompras">
+                <a href="shopping cart.html"><img src="./media/Index/carro.png" alt="Carro"></a>
+            </div>
+    
+            <div class="IconoUsuario">
+                <a href="login.html"><img src="./media/Index/iconoUsuario_blanca.png" alt="Icono" class="Icono"></a>
+            </div>
+    
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="carro">
+                <h2>Carrito de Compras</h2>
+                <div class="objeto-carro">
+                    <img src="tarjetas-gráficas-10.jpg" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 1</p>
+                        <p>$10.00</p>
+                    </div>
+                
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+                <div class="objeto-carro">
+                    <img src="https://via.placeholder.com/50" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 2</p>
+                        <p>$10.00</p>
+                    </div>
+                    
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+                <div class="objeto-carro">
+                    <img src="https://via.placeholder.com/50" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 3</p>
+                        <p>$10.00</p>
+                    </div>
+                    
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+                <div class="objeto-carro">
+                    <img src="https://via.placeholder.com/50" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 4</p>
+                        <p>$10.00</p>
+                    </div>
+                    
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
                 </div>
                 
-                <div class="cart-item-actions">
-                    <button>Eliminar</button>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="https://via.placeholder.com/50" alt="Producto">
-                <div class="cart-item-info">
-                    <p>Producto 2</p>
-                    <p>$10.00</p>
-                </div>
-                
-                <div class="cart-item-actions">
-                    <button>Eliminar</button>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="https://via.placeholder.com/50" alt="Producto">
-                <div class="cart-item-info">
-                    <p>Producto 3</p>
-                    <p>$10.00</p>
+                <div class="objeto-carro">
+                    <img src="https://via.placeholder.com/50" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 5</p>
+                        <p>$10.00</p>
+                    </div>
+                    
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
                 </div>
                 
-                <div class="cart-item-actions">
-                    <button>Eliminar</button>
-                </div>
-            </div>
-            <div class="cart-item">
-                <img src="https://via.placeholder.com/50" alt="Producto">
-                <div class="cart-item-info">
-                    <p>Producto 4</p>
-                    <p>$10.00</p>
+                <div class="objeto-carro">
+                    <img src="https://via.placeholder.com/50" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 6</p>
+                        <p>$10.00</p>
+                    </div>
+                    
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
                 </div>
                 
-                <div class="cart-item-actions">
-                    <button>Eliminar</button>
+                <div class="objeto-carro">
+                    <img src="https://via.placeholder.com/50" alt="Producto">
+                    <div class="info-objeto">
+                        <p>Producto 7</p>
+                        <p>$10.00</p>
+                    </div>
+                    
+                    <div class="objeto-carro-accion">
+                        <button>Eliminar</button>
+                    </div>
                 </div>
+                <div class="total-carro">
+                    Total: $10.00
+                </div>
+                <button class="boton-finalizar">Finalizar Compra</button>
             </div>
-            <div class="cart-total">
-                Total: $10.00
-            </div>
-            <button class="checkout-btn">Finalizar Compra</button>
         </div>
-    </div>
+    </main>
+
+    <a href="#" class="backToTop">Ir al inicio</a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>PCMOD es tu tienda de confianza para componentes      </p>
+                </p>de PC de alta calidad.</p>
+                <br>
+                <h4>Telefono de contacto</h4>
+                <p>682 334 901</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="CPU.html">CPU</a></li>
+                    <li><a href="PlacaBase.html">Placa Base</a></li>
+                    <li><a href="FuenteAlimentacion.html">Fuentes de alimentación</a></li>
+                    <li><a href="DiscosDuros.html">Discos Duros</a></li>
+                    <li><a href="GPU.html">GPU</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="_14">Siguenos en</h4>
+                <ul class="social-icons">
+                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+                <br>
+                
+                <p class="lema">La mejor tecnología al alcance de tu </p>
+                <p class="lema">mano con PCMOD</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PCMOD. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
