@@ -4,7 +4,7 @@ main {
   padding-top: 60px; 
 }
 /* Barra Lateral */
-#sidebar1 {
+#barraLateral1 {
   position: absolute;
   top: 70px; 
   padding: 20px;
@@ -14,22 +14,22 @@ main {
   border-right: 1px solid black;
 }
 
-#sidebar1 h2 {
+#barraLateral1 h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
   color: white;
 }
 
-#sidebar1 ul {
+#barraLateral1 ul {
   list-style: none;
   padding: 0;
 }
 
-#sidebar1 ul li {
+#barraLateral1 ul li {
   margin-bottom: 15px;  
 }
 
-#sidebar1 ul li a {
+#barraLateral1 ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.1em;
