@@ -3,22 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discos Duros</title>
-    <link rel="stylesheet" href="./styles/style_general.css">
-    <link rel="stylesheet" href="./styles/style_DiscosDuros.css">
+    <title>DiscosDuros</title>
+    <link rel="stylesheet" href="styles/style_general.css">
+    <link rel="stylesheet" href="styles/style_DiscosDuros.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
-
     <header>
-
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html"><img src="media/Index/Logo.png" alt="Logo"></a>
+            </div>
+            
+            <ul>
+                <li><a href="CPU.html" class="nav-link">CPU</a></li>
+                <li><a href="PlacaBase.html" class="nav-link">Placa Base</a></li>
+                <li><a href="FuenteAlimentacion.html" class="nav-link">Fuentes de Alimentación</a></li>
+                <li><a href="DiscosDuros.html" class="nav-link">Discos Duros</a></li>
+                <li><a href="GPU.html" class="nav-link">GPU</a></li>
+            </ul>
+    
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Buscar">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">search</i>
+                </button>
+            </div>
+    
+            <div class="CarroCompras">
+                <a href="shopping cart.html"><img src="media/Index/carro.png" alt="Carro"></a>
+            </div>
+    
+            <div class="IconoUsuario">
+                <a href="login.html"><img src="media/Index/iconoUsuario_blanca.png" alt="Icono" class="Icono"></a>
+            </div>
+    
+        </nav>
     </header>
 
     <main>
+        
+        <!-- Menú Lateral -->
+        <aside id="barraLateral1">
+            <hr class="divisor">
 
-    </main>
+            <h2>Filtros Populares</h2>
+            <div class="filtros">
+                <button class="filtro">Ssd M2</button>
+                <button class="filtro">Disco duro M2</button>
+                <button class="filtro">Disco duro Nvme</button>
+                <button class="filtro">M2 1Tb</button>
+                <button class="filtro">M2 2Tb</button>
+            </div>
+            <hr class="divisor">
 
-    <footer>
+            <h2>Filtrar por Marca</h2>
+            <div class="filtros2">
+                <ul>
+                    <li><a href="">Western Digital</a></li>
+                    <li><a href="">Kingston</a></li>
+                    <li><a href="">Seagate</a></li>
+                    <li><a href="">Samsung</a></li>
+                </ul>
+            </div>
 
+            <hr class="divisor">
+
+            <h2>Filtrar por Precio</h2>
+            <div class="filtros2">
+                <ul>
+                    <li><a href="">Menos de $1000</a></li>
+                    <li><a href="">$1000 - $3000</a></li>
+                    <li><a href="">Más de $3000</a></li>
+                </ul>
+            </div>
+            <hr class="divisor">
+
+            <details class="desplegable">
+                <summary>Tecnología</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="Disco-SSD"> Disco SSD</label><br>
+                    <label><input type="checkbox" name="tipo" value="HDD"> HDD</label><br>
+                </form>
+            </details>
+			
+			<hr class="divisor">
+			
+			<details class="desplegable">
+                <summary>Memoria</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="memoriaDisco1Tb"> 1TB</label><br>
+                    <label><input type="checkbox" name="tipo" value="memoriaDisco2Tb"> 2TB</label><br>
+					<label><input type="checkbox" name="tipo" value="memoriaDisco4Tb"> 4TB</label><br>
+					<label><input type="checkbox" name="tipo" value="memoriaDisco8Tb"> 8TB</label><br>
+                </form>
+            </details>
+
+            <hr class="divisor">
+
+            <details class="desplegable">
+                <summary>Valoración</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="5-estrellas"> 5 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="4-estrellas"> 4 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="3-estrellas"> 3 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="2-estrellas"> 2 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="1-estrellas"> 1 Estrella</label>
+                </form>
+            </details>
+
+            <hr class="divisor">
+
+            <details class="desplegable">
+                <summary>Entrega</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="mañana"> Recibelo Mañana</label><br>
+                    <label><input type="checkbox" name="tipo" value="gratis"> Envío Gratis</label><br>
+                </form>
+            </details>
+
+            <hr class="divisor">
+
+        </aside>
+        
+        <!-- Sección de productos -->
+        <section class="productos">
+            <h1>Discos Duros</h1>
+            <div class="producto">
+                <img src="./media/Discos Duros/1144-forgeon-nimbus-pro-ssd-m2-1tb-nvme-pcie-40-gen4-comprar__2_-removebg-preview.png" alt="FORGEON NIMBUS PRO DISCO SSD 1TB 7400MB/S NVMe PCIe 4.0 M.2 Gen4">
+                <div class="nombre">FORGEON NIMBUS PRO DISCO SSD 1TB 7400MB/S NVMe PCIe 4.0 M.2 Gen4</div>
+                <div class="precio">1002,50€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1635-wd-black-sn770-2tb-nvme-ssd-removebg-preview.png" alt="WD Black SN770 2TB Disco SSD 5150MB/S NVMe PCIe 4.0 M.2 Gen4 16GT/s">
+                <div class="nombre">WD Black SN770 2TB Disco SSD 5150MB/S NVMe PCIe 4.0 M.2 Gen4 16GT/s</div>
+                <div class="precio">179,99€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1348-toshiba-canvio-basics-25-2tb-usb-32-negro-opiniones-removebg-preview.png" alt="TOSHIBA CANVIO BASICS 2TB DISCO EXTERNO PORTÁTIL USB 3.2 NEGRO">
+                <div class="nombre">TOSHIBA CANVIO BASICS 2TB DISCO EXTERNO PORTÁTIL USB 3.2 NEGRO</div>
+                <div class="precio">80,00€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1538-fujitsu-s26361-f5776-l960-2-25-960gb-ssd-sata-3-removebg-preview.png" alt="FUJITSU S26361-f5776-l960-2 2.5" 960GB SSD SATA 3">
+                <div class="nombre">FUJITSU S26361-f5776-l960-2 2.5" 960GB SSD SATA 3</div>
+                <div class="precio">2358,78€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1428-wd-my-book-24tb-disco-duro-externo-sobremesa-35-usb-32-negro-removebg-preview.png" alt="WD My Book 24TB Disco Duro Externo Sobremesa 3.5" USB 3.2 Negro">
+                <div class="nombre">WD My Book 24TB Disco Duro Externo Sobremesa 3.5" USB 3.2 Negro</div>
+                <div class="precio">500,00€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1350-crucial-t705-4tb-m2-pcie-gen5-nvme-con-disipador-removebg-preview.png" alt="CRUCIAL T705 4TB M.2 PCIe Gen5 NVMe con Disipador">
+                <div class="nombre">CRUCIAL T705 4TB M.2 PCIe Gen5 NVMe con Disipador</div>
+                <div class="precio">730,65€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1826-lexar-nm790-4tb-ssd-m2-2280-pcie-40-nvme-slc-removebg-preview.png" alt="LEXAR NM790 4TB SSD M.2 2280 PCIe 4.0 NVMe SLC">
+                <div class="nombre">LEXAR NM790 4TB SSD M.2 2280 PCIe 4.0 NVMe SLC</div>
+                <div class="precio">520,71€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1514-corsair-mp600-pro-nh-8tb-ssd-pcie-gen4-x4-nvme-m2-tlc-nand-removebg-preview.png" alt="Corsair MP600 PRO NH 8TB SSD PCIe Gen4 x4 NVMe M.2 TLC NAND">
+                <div class="nombre">Corsair MP600 PRO NH 8TB SSD PCIe Gen4 x4 NVMe M.2 TLC NAND</div>
+                <div class="precio">1172,99€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1394-seagate-nytro-3031-sas-ssd-25-15tb-sas-3d-etlc-removebg-preview.png" alt="Seagate Nytro 3031 SAS SSD 2.5" 15TB SAS 3D eTLC">
+                <div class="nombre">Seagate Nytro 3031 SAS SSD 2.5" 15TB SAS 3D eTLC</div>
+                <div class="precio">6059,00€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1465-synology-enterprise-series-384-tb-ssd-25-sata-3-nas-removebg-preview.png" alt="Synology Enterprise Series 3.84 TB SSD 2.5" SATA 3 NAS">
+                <div class="nombre">Synology Enterprise Series 3.84 TB SSD 2.5" SATA 3 NAS</div>
+                <div class="precio">1020,65€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1282720-removebg-preview.png" alt="Kingston A400 240Gb Disco SSD SATA3 500MB/S">
+                <div class="nombre">Kingston A400 240Gb Disco SSD SATA3 500MB/S</div>
+                <div class="precio">40,00€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="./media/Discos Duros/1451-kingston-nv3-500gb-ssd-m2-nvme-2280-pcie-40-3d-nand-removebg-preview.png" alt="Kingston NV3 500GB SSD M.2 NVMe 2280 PCIe 4.0 3D NAND">
+                <div class="nombre">Kingston NV3 500GB SSD M.2 NVMe 2280 PCIe 4.0 3D NAND</div>
+                <div class="precio">301,53€</div>
+                
+                <button class="btn-comprar">Añadir al carrito</button>
+            </div>
+            
+        </section>
+        
+        <div class="paginas">
+            <button class="pagina-boton"><</button>
+            <button class="pagina-boton">1</button>
+            <button class="pagina-boton">2</button>
+            <button class="pagina-boton">3</button>
+            <button class="pagina-boton">4</button>
+            <button class="pagina-boton">5</button>
+            <button class="pagina-boton">></button>
+        </div>
+        
+    </main>         
+    
+    <a href="#" class="backToTop">Ir al inicio</a>
+
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>PCMOD es tu tienda de confianza para componentes      </p>
+                </p>de PC de alta calidad.</p>
+                <br>
+                <h4>Telefono de contacto</h4>
+                <p>682 334 901</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="CPU.html">CPU</a></li>
+                    <li><a href="PlacaBase.html">Placa Base</a></li>
+                    <li><a href="FuenteAlimentacion.html">Fuentes de alimentación</a></li>
+                    <li><a href="DiscosDuros.html">Discos Duros</a></li>
+                    <li><a href="GPU.html">GPU</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="_14">Siguenos en</h4>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.rss.com" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="https://www.youtube.com" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Angelvp06/PROYECTO-WEB" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+                <br>
+                
+                <p class="lema">La mejor tecnología al alcance de tu </p>
+                <p class="lema">mano con PCMOD</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PCMOD. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
