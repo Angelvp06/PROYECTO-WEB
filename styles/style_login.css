@@ -103,14 +103,21 @@ button:hover {
     transform: scale(.6);
 }
 
-/*Boton back to top*/
-.backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+/* Estilo para el botón flotante */
+.floating-button {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    width: 30px;
+    height: 30px;
     background-color: #eb8231;
     color: white;
-    padding: 10px 15px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-  }
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.floating-button:hover {
+    background-color: #c52121;
+}

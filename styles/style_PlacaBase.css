@@ -9,7 +9,7 @@ main {
   top: 70px; 
   padding: 20px;
   width: 300px;
-  height: 2447px; 
+  height: 2487px; 
   background-color: #797979;
   border-right: 1px solid black;
 }
@@ -126,6 +126,9 @@ details.desplegable input[type="checkbox"] {
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 .precio{
@@ -138,9 +141,11 @@ details.desplegable input[type="checkbox"] {
 }
 
 .btn-comprar {
-  margin-top: 5px;
+  margin-top: 15px;
   background: #eb8231;
   color: white;
+  text-decoration: none;
+  font-size: 15px;
   border: none;
   padding: 8px 20px;
   border-radius: 5px;
@@ -191,7 +196,7 @@ h1 {
   gap: 5px; 
   padding: 6px; 
   width: 370px;
-  margin-top: 2360px;
+  margin-top: 2400px;
   margin-left: 780px;
 }
 
