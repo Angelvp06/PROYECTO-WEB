@@ -102,3 +102,15 @@ button:hover {
 #chk:checked ~ .singup label {
     transform: scale(.6);
 }
+
+/*Boton back to top*/
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eb8231;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
