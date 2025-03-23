@@ -6,19 +6,183 @@
     <title>CPU</title>
     <link rel="stylesheet" href="./styles/style_general.css">
     <link rel="stylesheet" href="./styles/style_cpu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-
     <header>
-
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html"><img src="./media/Index/Logo.png" alt="Logo"></a>
+            </div>
+            
+            <ul>
+                <li><a href="CPU.html" class="nav-link">CPU</a></li>
+                <li><a href="PlacaBase.html" class="nav-link">Placa Base</a></li>
+                <li><a href="FuenteAlimentacion.html" class="nav-link">Fuentes de Alimentación</a></li>
+                <li><a href="DiscosDuros.html" class="nav-link">Discos Duros</a></li>
+                <li><a href="GPU.html" class="nav-link">GPU</a></li>
+            </ul>
+    
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Buscar">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">search</i>
+                </button>
+            </div>
+    
+            <div class="CarroCompras">
+                <a href="cestaCompra.html"><img src="./media/Index/carro.png" alt="Carro"></a>
+            </div>
+    
+            <div class="IconoUsuario">
+                <a href="login.html"><img src="./media/Index/iconoUsuario_blanca.png" alt="Icono" class="Icono"></a>
+            </div>
+    
+        </nav>
     </header>
 
     <main>
+        
+        <!-- Menú Lateral -->
+        <aside id="barraLateral1">
+            <hr class="divisor">
 
-    </main>
+            <h2>Filtros Populares</h2>
+            <div class="filtros">
+                <button class="filtro">Nucleos</button>
+                <button class="filtro">Hilos</button>
+                <button class="filtro">Temperaturas</button>
+                <button class="filtro">Socket</button>
+            </div>
+            <hr class="divisor">
 
-    <footer>
+            <h2>Filtrar por Marca</h2>
+            <div class="filtros2">
+                <ul>
+                    <li><a href="">Intel</a></li>
+                    <li><a href="">AMD</a></li>
+                </ul>
+            </div>
+            <hr class="divisor">
 
+            <h2>Filtrar por Precio</h2>
+            <div class="filtros2">
+                <ul>
+                    <li><a href="">Menos de $100</a></li>
+                    <li><a href="">$100 - $250</a></li>
+                    <li><a href="">Más de $250</a></li>
+                </ul>
+            </div>
+            <hr class="divisor">
+
+            <details class="desplegable">
+                <summary>Valoración</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="5-estrellas"> 5 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="4-estrellas"> 4 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="3-estrellas"> 3 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="2-estrellas"> 2 Estrellas</label><br>
+                    <label><input type="checkbox" name="tipo" value="1-estrellas"> 1 Estrella</label>
+                </form>
+            </details>
+            <hr class="divisor">
+
+            <details class="desplegable">
+                <summary>Entrega</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="mañana"> Recibelo Mañana</label><br>
+                    <label><input type="checkbox" name="tipo" value="gratis"> Envío Gratis</label><br>
+                </form>
+            </details>
+            <hr class="divisor">
+
+            <details class="desplegable">
+                <summary>Compatibilidad Placa base</summary>
+                <form>
+                    <label><input type="checkbox" name="tipo" value="intel"> Socket Intel</label><br>
+                    <label><input type="checkbox" name="tipo" value="amd"> Socket AMD</label><br>
+                </form>
+            </details>
+            <hr class="divisor">
+
+        </aside>
+        
+        <!-- Sección de productos -->
+        <section class="productos">
+            <h1>Procesadores</h1>
+            <div class="producto">
+                <img src="">
+                <div class="nombre"></div>
+                <div class="precio">€</div>
+                
+                <a href="cestaCompra.html" class="btn-comprar">Añadir al carrito</a>  
+            </div>
+
+            <div class="producto">
+                <img src="">
+                <div class="nombre"></div>
+                <div class="precio">€</div>
+                
+                <a href="cestaCompra.html" class="btn-comprar">Añadir al carrito</a>  
+            </div>
+            
+        </section>
+        
+        <div class="paginas">
+            <button class="pagina-boton"><</button>
+            <button class="pagina-boton">1</button>
+            <button class="pagina-boton">2</button>
+            <button class="pagina-boton">3</button>
+            <button class="pagina-boton">4</button>
+            <button class="pagina-boton">5</button>
+            <button class="pagina-boton">></button>
+        </div>
+        
+    </main>         
+    
+    <a href="#" class="backToTop">Ir al inicio</a>
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>PCMOD es tu tienda de confianza para componentes      </p>
+                </p>de PC de alta calidad.</p>
+                <br>
+                <h4>Telefono de contacto</h4>
+                <p>627 270 620</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="CPU.html">CPU</a></li>
+                    <li><a href="PlacaBase.html">Placa Base</a></li>
+                    <li><a href="FuenteAlimentacion.html">Fuentes de alimentación</a></li>
+                    <li><a href="DiscosDuros.html">Discos Duros</a></li>
+                    <li><a href="GPU.html">GPU</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="_14">Siguenos en</h4>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.rss.com" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                    <li><a href="https://www.youtube.com" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Angelvp06/PROYECTO-WEB" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+                <br>
+                
+                <p class="lema">La mejor tecnología al alcance de tu </p>
+                <p class="lema">mano con PCMOD</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PCMOD. Todos los derechos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
