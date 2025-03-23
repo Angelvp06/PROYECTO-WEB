@@ -110,7 +110,7 @@ button:hover {
     left: 800px;
     width: 30px;
     height: 30px;
-    background-color: #eb8231;
+    background-color: #4d4d4e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -119,5 +119,5 @@ button:hover {
 }
 
 .floating-button:hover {
-    background-color: #c52121;
+    background-color: #5a5b61;
 }
