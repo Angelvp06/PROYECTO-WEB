@@ -1,22 +1,18 @@
-/* 🌍 Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* 🖌 Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
 }
 
-
-/* 📦 Contenedor principal */
-.container {
+/*General*/
+.contenedor {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 20px;
     background-color: #d8d5d5;
@@ -25,8 +21,8 @@ body {
     border: #333 1px solid;
 }
 
-/* 🛒 Cesta */
-.cart {
+/*Cesta*/
+.cesta {
     flex: 3;
     padding-right: 20px;
     background-color: #d8d5d5;
@@ -39,12 +35,13 @@ h2 {
     font-size: 24px;
 }
 
-/* 📜 Productos */
-.cart-item {
+/* Productos */
+.producto-cesta {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     padding: 15px;
+    width: 850px;
     background: rgba(233, 233, 233, 0.8);
     border: #333 1px solid;
     border-radius: 8px;
@@ -52,11 +49,13 @@ h2 {
     transition: transform 0.2s;
 }
 
-.cart-item:hover {
+.producto-cesta:hover {
     transform: scale(1.02);
+    box-shadow: 0 0 20px #444;
+    filter: brightness(1.1);
 }
 
-.cart-item img {
+.producto-cesta img {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -64,7 +63,7 @@ h2 {
     border-radius: 8px;
 }
 
-.item-details {
+.detalles-producto {
     flex: 1;
 }
 
@@ -73,14 +72,14 @@ h3 {
     font-size: 18px;
 }
 
-.price {
+.precio {
     font-weight: bold;
     color: #27ae60;
     font-size: 18px;
 }
 
-/* ❌ Botón eliminar */
-.delete-btn {
+/* Botón eliminar */
+.btn-eliminar {
     background: #eb8231;
     color: white;
     border: none;
@@ -91,60 +90,79 @@ h3 {
     transition: background 0.3s;
 }
 
-.delete-btn:hover {
+.btn-eliminar:hover {
     background: #c52121;
 }
 
-/* 📊 Resumen */
-.summary {
-    flex: 1;
-    background: rgba(233, 233, 233, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    border: #333 1px solid;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Resumen */
+.resumen {
+    background: rgba(233, 233, 233, 0.9);
+    padding: 25px;
+    width: 600px;
+    height: 400px;
+    margin-top: 45px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.resumen h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
     text-align: center;
 }
 
-.summary p {
-    font-size: 20px;
-    margin-bottom: 10px;
+.resumen-detalles {
+    margin-bottom: 15px;
+}
+
+.resumen-detalles p {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+}
+
+.resumen-detalles span {
+    font-weight: bold;
+    color: #333;
+}
+
+.envio {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
 }
 
 .total {
     font-size: 22px;
     font-weight: bold;
     color: #27ae60;
+    text-align: center;
+    margin: 15px 0;
 }
 
-/* 🛍 Botón comprar */
-.buy-btn {
+.btn-compra {
+    display: block;
+    width: 100%;
     background: #eb8231;
     color: white;
     border: none;
-    padding: 15px 20px;
+    padding: 15px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 20px;
+    text-align: center;
     transition: background 0.3s;
+    text-decoration: none;
 }
 
-.buy-btn:hover {
+.btn-compra:hover {
     background: #c52121;
+    transform: scale(1.02);
 }
 
-/* 📱 Responsive */
-@media (max-width: 900px) {
-    .container {
-        flex-direction: column;
-        width: 90%;
-    }
-    
-    .cart {
-        padding-right: 0;
-    }
-    
-    .summary {
-        margin-top: 20px;
-    }
-}
+
