@@ -126,6 +126,9 @@ details.desplegable input[type="checkbox"] {
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 .precio{
@@ -141,6 +144,7 @@ details.desplegable input[type="checkbox"] {
   margin-top: 5px;
   background: #eb8231;
   color: white;
+  text-decoration: none;
   border: none;
   padding: 8px 20px;
   border-radius: 5px;

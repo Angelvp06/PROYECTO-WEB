@@ -178,16 +178,6 @@ h1 {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/*Anuncio Derecha*/
-.AnuncioDerecha{
-  position:absolute;
-  top: 250px;
-  right: 0;
-  width: 200px;
-  height: 2000px;
-  margin-right: 120px;
-}
-
 /*paginas*/
 .paginas {
   position: absolute;
